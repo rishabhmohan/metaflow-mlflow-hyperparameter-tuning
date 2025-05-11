@@ -46,11 +46,11 @@ Run the Metaflow script to start the hyperparameter tuning workflow.
 ```mlflow ui```
  
 # Open a web browser and go to http://127.0.0.1:5000. You will be able to see the experiment runs, parameters, metrics, and models logged by MLflow.
-After running the workflow, you can view the best hyperparameters and their corresponding accuracy for each model in the MLflow UI and the hyperparameter_tuning_results.csv file.
+# After running the workflow, you can view the best hyperparameters and their corresponding accuracy for each model in the MLflow UI and the hyperparameter_tuning_results.csv file.
 
 
-Best hyperparameters for RandomForest: (100, 10) with accuracy: 0.9333  
-Best hyperparameters for LogisticRegression: (1, 'lbfgs') with accuracy: 0.9000  
-Best hyperparameters for SVC: (1, 'rbf') with accuracy: 0.9667  
+# Best hyperparameters for RandomForest: (100, 10) with accuracy: 0.9333  
+# Best hyperparameters for LogisticRegression: (1, 'lbfgs') with accuracy: 0.9000  
+# Best hyperparameters for SVC: (1, 'rbf') with accuracy: 0.9667  
  
 
