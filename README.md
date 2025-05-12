@@ -76,10 +76,15 @@ Open a terminal and start Minikube with the following command:
 ```minikube start  ```
  
 Install kubectl: ```curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/arm64/kubectl"```
+
 Verify Minikube Installation: ```minikube status``` 
+
 Check that kubectl can interact with your Minikube cluster: ```kubectl get nodes```
+
 Create a deployment YAML file (e.g., deployment.yaml) and apply it using kubectl: ```kubectl apply -f deployment.yaml```  
+
 Create a service YAML file (e.g., service.yaml) and apply it using kubectl: ```kubectl apply -f service.yaml```
+
 Use Minikube to access the service: ```minikube service fastapi-prediction-app```
 
 
