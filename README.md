@@ -47,5 +47,15 @@ Run the Metaflow script to start the hyperparameter tuning workflow.
  Best hyperparameters for RandomForest: (100, 10) with accuracy: 0.9333  
  Best hyperparameters for LogisticRegression: (1, 'lbfgs') with accuracy: 0.9000  
  Best hyperparameters for SVC: (1, 'rbf') with accuracy: 0.9667  
- 
+
+### Step 5: Build AND RUN the Docker image
+```
+docker build -t fastapi-prediction-app .  
+docker run -p 80:80 fastapi-prediction-app  
+```
+
+### Serve the model
+Now, when you open http://localhost:80 in your web browser, you should see separate input fields for each feature.
+Upon submission, the form will send the data to the /predict/ endpoint and return the prediction.
+
 
