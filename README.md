@@ -61,6 +61,9 @@ Upon submission, the form will send the data to the /predict/ endpoint and retur
 
 
 ### Deploying with Minikube
+
+Push the Docker image to a registry: ```docker push your-docker-username/fastapi-app:latest```
+
 Minikube simplifies Kubernetes development by providing a local environment where developers can replicate essential functions. 
 This enables them to work with pods, services, and deployments like a production cluster.
 
@@ -76,6 +79,7 @@ Open a terminal and start Minikube with the following command:
 ```minikube start  ```
  
 Install kubectl:
+
 ```curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/arm64/kubectl"```
 
 Verify Minikube Installation: ```minikube status``` 
