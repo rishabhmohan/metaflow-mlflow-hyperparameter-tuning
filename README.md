@@ -62,7 +62,7 @@ Upon submission, the form will send the data to the /predict/ endpoint and retur
 
 ### Deploying with Minikube
 
-Push the Docker image to a registry: ```docker push your-docker-username/fastapi-app:latest```
+Push the Docker image to a registry: ```docker push fastapi-app:latest```
 
 Minikube simplifies Kubernetes development by providing a local environment where developers can replicate essential functions. 
 This enables them to work with pods, services, and deployments like a production cluster.
