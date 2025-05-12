@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi-prediction-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi-prediction-app
+  template:
+    metadata:
+      labels:
+        app: fastapi-prediction-app
+    spec:
+      containers:
+      - name: fastapi-prediction-app
+        image: fastapi-prediction-app
+        ports:
+        - containerPort: 5000
