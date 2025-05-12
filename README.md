@@ -60,3 +60,32 @@ Now, when you open http://localhost:80 in your web browser, you should see separ
 Upon submission, the form will send the data to the /predict/ endpoint and return the prediction.
 
 
+### Deploying with Minikube
+Minikube simplifies Kubernetes development by providing a local environment where developers can replicate essential functions. 
+This enables them to work with pods, services, and deployments like a production cluster.
+
+Install Minikube:
+To install the latest minikube stable release on ARM64 macOS using binary download:
+```
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-darwin-arm64
+sudo install minikube-darwin-arm64 /usr/local/bin/minikube
+```
+Start Minikube:
+Open a terminal and start Minikube with the following command:
+
+```minikube start  ```
+ 
+ Install kubectl: ```curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/arm64/kubectl"```
+
+Verify Minikube Installation: ```minikube status``` 
+
+Check that kubectl can interact with your Minikube cluster: ```kubectl get nodes```
+ 
+Deploying an Application on Minikube
+Create a deployment YAML file (e.g., deployment.yaml) and apply it using kubectl: ```kubectl apply -f deployment.yaml```  
+
+Create a service YAML file (e.g., service.yaml) and apply it using kubectl: ```kubectl apply -f service.yaml```
+ 
+Use Minikube to access the service: ```minikube service fastapi-prediction-app```
+
+
