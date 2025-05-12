@@ -75,7 +75,8 @@ Open a terminal and start Minikube with the following command:
 
 ```minikube start  ```
  
-Install kubectl: ```curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/arm64/kubectl"```
+Install kubectl:
+```curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/darwin/arm64/kubectl"```
 
 Verify Minikube Installation: ```minikube status``` 
 
