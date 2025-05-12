@@ -98,6 +98,5 @@ Use Minikube to access the service: ```minikube service fastapi-prediction-app``
 3. Metaflow: https://docs.metaflow.org/metaflow/configuring-flows/basic-configuration
 4. MLflow: https://mlflow.org/
 5. ML Zoomcamp 10.6 - Deploying a Simple Service to Kubernetes [https://www.youtube.com/watch?v=PPUCVRIV9t8&list=PL3MmuxUbc_hIhxl5Ji8t4O6lPAOpHaCLR](https://github.com/DataTalksClub/machine-learning-zoomcamp/blob/master/10-kubernetes/06-kubernetes-simple-service.md)
-6. 
 
 
