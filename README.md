@@ -74,7 +74,7 @@ sudo install minikube-darwin-arm64 /usr/local/bin/minikube
 ```
 
 Start Minikube:
-Open a terminal and start Minikube with the following command:
+Open a terminal and start Kubernetes cluster with the following command:
 
 ```minikube start  ```
  
